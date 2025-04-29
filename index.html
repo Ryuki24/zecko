@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+        .centered {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-content">
+        <h1>Kenal Gw Lebih Jauh</h1>
+        <button id="btn_pencet" onclick="pencet()">Kenal Gw</button>
+        <button onclick="alert('Agil_tzy');">Tiktok</button>
+        <button id="btn_epep" onclick="pencet2()">Nama FreeFire</button>
+        <h2>Mau Donate? Pencet ini</h2>
+        <h3 style="position: relative; left: 130px;">\/</h3>
+        <a href="https://sociabuzz.com/ryuki24" target="_blank" style="position: relative; right: 490px; display: block; margin-top: 20px; text-align: center; font-size: 18px; text-decoration: none; color: blue;">Link Donate</a>
+    </div>
+
+    <div id="kenal-gw" class="hidden">
+        <h1 style="position: relative; left: 3px;">Nama: Agil</h1>
+        <h2 style="position: relative; left: 2px;">Kelebihan: Mengerti Pelajaran INF</h2>
+        <h3 style="position: relative; left: px;">Kelas: VII</h3>
+        <h4 style="position: relative; left: px;">Hobi: Ngoding</h4>
+        <button onclick="backToBeginning()">Back</button>
+        <img src="https://i.gifer.com/1UEn.gif" class="centered">
+    </div>
+
+    <div id="nama-freefire" class="hidden">
+        <h1 style="position: relative; left: 3px;">Nama: Agil_Ryuki</h1>
+        <h2 style="position: relative; left: 2px;">Level: 50an</h2>
+        <h3 style="position: relative; left: px">Ranked: Diamond</h3>
+        <button onclick="backToBeginning()">Back</button>
+        <img src="https://i.gifer.com/1UEn.gif" class="centered">
+    </div>
+
+    <script>
+        function pencet() {
+            document.getElementById('main-content').classList.add('hidden');
+            document.getElementById('kenal-gw').classList.remove('hidden');
+        }
+
+        function pencet2() {
+            document.getElementById('main-content').classList.add('hidden');
+            document.getElementById('nama-freefire').classList.remove('hidden');
+        }
+
+        function backToBeginning() {
+            document.getElementById('kenal-gw').classList.add('hidden');
+            document.getElementById('nama-freefire').classList.add('hidden');
+            document.getElementById('main-content').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
